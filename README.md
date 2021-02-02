@@ -122,7 +122,7 @@ More information is pending.
 
 ## Publications
 
-If you learn more about MASOM, please review the following papers:
+If you would like to learn more about MASOM, please review the following papers:
 
 MASOM V1 
 - Tatar, K. & Pasquier, P. (2017). MASOM: A Musical Agent Architecture based on Self-Organizing Maps, Affective Computing, and Variable Markov Models. In Proceedings of the 5th International Workshop on Musical Metacreation (MuMe 2017).
