@@ -1,12 +1,9 @@
 # Lockdown Jammer v1.0
 A Virtual Musical Partner for Creative Brainstorming
-
 by Notto J. W. Thelle
 
 using
-
 MASOM (Musical Agent based on Self-Organizing Maps) v2.0.2
-
 by Kıvanç Tatar
 
 For the original version of MASOM, go to https://github.com/ktatar/MASOM
