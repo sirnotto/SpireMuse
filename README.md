@@ -7,7 +7,8 @@ MASOM (Musical Agent based on Self-Organizing Maps) v2.0.2
 by Kıvanç Tatar
 
 For the original version of MASOM, go to https://github.com/ktatar/MASOM
-This version of MASOM has been modified to work with the Lockdown Jammer interface
+
+This version of MASOM has been modified to work with the Lockdown Jammer interface.
 
 Lockdown Jammer is co-creative musical agent that engages in different kinds of interactive behaviors and stylistic responses. The software utilizes corpora of solo instrumental performances encoded as self-organized maps and outputs slices of the corpora as concatenated, remodelled audio sequences. Transitions between the agent’s behaviors are partially automated, and the interface enables the negotiation of these transitions through feedback buttons that signal approval, force reversions to previous behaviors, or request change. Styles of musical responses are embedded in a pre-trained latent space, emergent in the interaction, and may be influenced through the weighting of rhythmic, spectral, harmonic and melodic features. The training and run-time modules utilize the MASOM agent architecture.
 
