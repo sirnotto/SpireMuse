@@ -1,14 +1,18 @@
-# MASOM v2
-Musical Agent based on Self-Organizing Maps v2.0.2
+# Lockdown Jammer v1.0
+A Virtual Musical Partner for Creative Brainstorming
+by Notto J. W. Thelle
+
+using
+MASOM (Musical Agent based on Self-Organizing Maps) v2.0.2
 by Kıvanç Tatar
 
-For questions, contact ktatar@sfu.ca.
+For the original version of MASOM, go to https://github.com/ktatar/MASOM
 
-_This version was forked by Notto J. W. Thelle, scroll to the end of the readme file for more info about this fork._
+This version of MASOM has been modified to work with the Lockdown Jammer interface.
 
-This is a whole new version of MASOM. Hurray ╰(▔∀▔)╯
+Lockdown Jammer is co-creative musical agent that engages in different kinds of interactive behaviors and stylistic responses. The software utilizes corpora of solo instrumental performances encoded as self-organized maps and outputs slices of the corpora as concatenated, remodelled audio sequences. Transitions between the agent’s behaviors are partially automated, and the interface enables the negotiation of these transitions through feedback buttons that signal approval, force reversions to previous behaviors, or request change. Styles of musical responses are embedded in a pre-trained latent space, emergent in the interaction, and may be influenced through the weighting of rhythmic, spectral, harmonic and melodic features. The training and run-time modules utilize the MASOM agent architecture.
 
-In this version, you can separate the samples or audio excerpts that MASOM plays from the recordings that MASOM learns the musical structure. This version is incompatible with the previous versions of MASOM.
+Lockdown Jammer is designed to encourage creative exploration and defer cognitive deliberation. The musical response type is embedded in the latent memory space and activated through interactive behaviors ranging from highly reactive to the user’s input to largely independent. The musical direction can be influenced indirectly through weighting rhythmic, spectral, melodic and harmonic features.
 
 Install following MAX packages from the package manager:
 
@@ -24,31 +28,21 @@ Install the following packages from the links below:
 
 - Download this repo. 
 
-Go to the Max 8 menu -> Options -> File preferences. Using the plus button and then pressing the choose button; add the abstractions folder in this repo, and the folder of sadam library is in your MAX file path list.   
+Go to the Max 8 menu -> Options -> File preferences. Using the plus button and then pressing the choose button; add the abstractions folder in this repo, and the folder of sadam library is in your MAX file path list. The abstraction folder also includes externals yin~, bonk~, ircamdescriptor~, bc.autoname~, bc.virfun~, and bc. yinstats~.
 
 Restart your Max after you install all libraries and adding the path of the abstractions folder in this repo to the file preferences in Max.
 
-# Training on your own dataset
+# Training on your own dataset with MASOM
 
 - Create a folder for your dataset. Name doesn't matter. We will refer to this folder as dataset_folder from now on.
 
 ## Preparing your audio files for training
 
-- In your dataset_folder create three folder named,
-    - audio   
-    - samples
-    - forms
+- In your dataset_folder create a folder named audio
 
+Please notice the no-caps. This folder should have audio files in the format of .wav, 16-bit, 44.1kHz
 
-Please notice the no-caps. All these folders should have audio files in the format of .wav, 16-bit, 44.1kHz. The difference is,
-
-- audio: This folder should have the recordings of yours, that you would like to use both as an audio sample library, and also as a musical form to train the sequence modelling algorithms in MASOM. In brief, this folder is for your own compositions where there is no issue of copyright infringement.
-
-- samples: This folder is for individual samples, not for compositions. MASOM uses the .wav files in this folder for the playback. The files in this folder do not go through a segmentation, they are supposed to be individual sound objects. They are included in the audio memory of MASOM. However, they are not used for musical structure learning since they are just samples. 
-
-- forms: This folder is for the compositions that you want to use for the musical structure learning, but you do not want MASOM to play any audio segment from these files.    
-
-MASOM dataset expects audio files in these folders. You should convert all your audio files to wav CD format in advance (.wav, 16-bit - 44.1 kHz) because of [MuBu](https://forum.ircam.fr/projects/detail/mubu/). If your files are in another type, you can easily convert them using Audacity:
+If your files are in another type, you can easily convert them using Audacity:
 https://www.audacityteam.org/.
 
 Audacity allows you to create a macro that goes through all your files to convert them to wave files. Under the Audacity menu, go to Tools->Macros. Create a new macro with any name, and insert "Export as wav" command to your macro. The order of commands matter. You can also normalize your files if you want, by inserting a "Normalize" command before "Export as wav".
@@ -75,19 +69,19 @@ To run this section,
 - Set your minimum and maximum segment duration in the UI. The segmentation is automatic; however, we can still set the minimum and maximum durations. 
 - Press the start button. This will take some time, depending on how many files you have. 
 
-**Debugging:** The patch goes through all .wav files one by one. Sometimes, you may end up with a problematic audio file and the algorithm may get stuck. In my experience, sometimes MuBu cannot load a file with foreign letters in the name. Also, the format of the audio files may cause an issue. In those cases where there is an issue with a file, the patch would get stuck. Check the filename under the overall progress bar to have an idea of which file causes the issue. You can fix or remove the problematic file, and continue the segmentation from where it was by pressing the continue button. Changing the index number also starts the training from the file with the index number in the coll list. You can change the index number as you like, and press continue to start the segmentation from any file you like. 
+**Debugging:** The patch goes through all .wav files one by one. Sometimes, you may end up with a problematic audio file and the algorithm may get stuck. Sometimes MuBu cannot load a file with foreign letters in the name. Also, the format of the audio files may cause an issue. In those cases where there is an issue with a file, the patch would get stuck. Check the filename under the overall progress bar to have an idea of which file causes the issue. You can fix or remove the problematic file, and continue the segmentation from where it was by pressing the continue button. Changing the index number also starts the training from the file with the index number in the coll list. You can change the index number as you like, and press continue to start the segmentation from any file you like. 
 
-## 3- Feature Extraction - Samples
+## 3- Concatenate the data
 
-Similar to the step 2, and this section goes through the audio sample files in your samples folder to tag them with audio features. Different than step 2, this step does not apply segmentation to the audio files in the samples folder. 
-
-## 4- Concatenate the data
-
-This step first creates a folder called "data" in your dataset_folder. Then, this step concatenates all data files in your audio and samples folder into one text file with the name data-concatenated.txt. This text file becomes MASOM's sound memory. 
+This step first creates a folder called "data" in your dataset_folder. Then, this step concatenates all data files in your audio folder into one text file with the name data-concatenated.txt. This text file becomes MASOM's sound memory. 
 
 - Press the start button. 
 
 To confirm if this step was successful, check if data-concatenated.txt exists in the dataset_folder\data.
+
+## 4- Calculate BPMs
+
+The file receiver.py must be running for this to work. Launch from terminal with command: python3 receiver.py
 
 ## 5- Self-Organizing Map Training
 
@@ -111,11 +105,7 @@ After the Self-Organizing Map training, we can assign each audio segment and sam
 
 This section creates clusters.txt in the dataset_folder/data. In the clusters.txt, the first number is the SOM node ID, and the rest of the numbers are the indexes of the audio segments in the data-concatenated.txt file. 
 
-## 7- Analyze recordings in the forms folder  
-
-This section applies segmentation and audio feature extraction to the recordings in the folder "forms". MASOM require this process to create musical structure from these recordings. This algorithm of this step is almost the same as step 2.   
-
-## 8 - Musical Structure
+## 7- Musical Structure
 
 After you complete all previous sections, this step is rather easy. Just click the start button, and press the save button when it is done. This creates the file VMM-training-SOM-seq.txt in the agent_folder/data location. MASOM uses this file to train the statistical sequence modelling algorithms, specifically factorOracle and Variable Markov Models. 
 
@@ -123,37 +113,16 @@ This section converts the original songs in the training dataset to a sequence o
 
 ========================
 
-## Running Factor Oracle version of MASOM
+## Running Lockdown Jammer with MASOM
 
-Let's make some sounds! 
-
-The training until this point allows you to use generative version of MASOM with factorOracle. There two types of generative MASOM
-
-- **gen-FO**
-  This version is monophonic, and plays one sound after another. The sound selection is done automatically by MASOM. To run,
-  
-    1- Open the gen-FO-run-example.maxpat
-    
-    2- Drop your agent_folder to the "drop a folder here" area.
-<<<<<<< HEAD
-    3- Choose a song from the menu to train the factorOracle. This training is so fast that it doesn't require save & load. The list includes recordings in both the "audio" and "forms" folders.
-=======
-    
-    3- Choose a song from the menu to train the factorOracle. This training is so fast that it doesn't require save & load. 
-    
-    4- Press the Start button. The toggle under the start button controls a gate that stops sound selection loop. The bang next to the toggle requests Factor Oracle to suggest a new sound. This bang is clickable. The MUTE button mutes all sounds generated by the agent. Congruence is a Factor Oracle parameter that sets the probabilty of forward jumps vs. backwards jumps. 
-
-- **gen-FO-fixed-rhythm**
-  The steps to run this version is the same as gen-FO version. The only difference of gen-FO-fixed-rhythm is that the sound selection happens on a regular time interval. There is an additional tempo parameter in the UI to control the time interval of sound selection. This version can play polyphony, if the selected sound samples are longer than the given time interval of sound selection. 
+More information is pending.
   
 =====================
-
-Keep in touch for the Variable Markov Model Max-Order versions of MASOM for interactive music systems... The guide is upcoming...
   
 
 ## Publications
 
-If you would like to cite this work, please consider citing the following papers:
+If you would like to learn more about MASOM, please review the following papers:
 
 MASOM V1 
 - Tatar, K. & Pasquier, P. (2017). MASOM: A Musical Agent Architecture based on Self-Organizing Maps, Affective Computing, and Variable Markov Models. In Proceedings of the 5th International Workshop on Musical Metacreation (MuMe 2017).
@@ -165,7 +134,9 @@ Agents based on Self-Organizing Maps. Submitted to the Artificial Intelligence J
 
 More info is available at: kivanctatar.com/masom
 
-## Acknowledgements
+So far, there are no publications related to Lockdown Jammer or the modifications to MASOM detailed in this readme file.
+
+## Acknowledgements (related to MASOM)
 
 This work has been supported by the Canada Council of the Arts, the Natural Sciences and Engineering Research Council of Canada, and Social Sciences and Humanities Research Council of Canada.
 
@@ -175,10 +146,6 @@ MASOM v2 is supported by Black Bag Media artist group's Canada Council for the A
 
 MASOM v1 is created in part of Kıvanç Tatar's doctoral studies; supervised by Philippe Pasquier, Steve Dipaola, Oliver Bown, and externally reviewed by Matthew Yee-King; and funded by a doctoral scholarship from Philippe Pasquier's SSHRC Insight and NSERC Discovery grants. [Thesis](http://summit.sfu.ca/item/19665)
 
-I would like to also thank Notto J. W. Thelle, Jeff Ens, Ronald Boerson, Jonas Krasch, and Jianyu Fan for their contributions. 
-
-## Note from Notto J. W. Thelle
-
-This version of MASOM has been extended with chroma features. In addition to the 35 features in the original SOM vector, 24 chroma features are included (12 chroma mean + 12 chroma standard deviation). This is meant to strengthen MASOM's performance with audio input from musical instruments, making it more likely that the SOM nodes will cluster audio segments that are harmonically related.
+I would like to also thank , Jeff Ens, Ronald Boerson, Jonas Krasch, and Jianyu Fan for their contributions. 
 
 
