@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 132.0, 129.0, 684.0, 577.0 ],
+		"rect" : [ 40.0, 79.0, 999.0, 637.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 11.0,
@@ -45,7 +45,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 445.25, 617.0, 29.5, 19.0 ],
+					"patching_rect" : [ 218.0, 715.0, 29.5, 19.0 ],
 					"text" : "+~"
 				}
 
@@ -57,7 +57,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 486.0, 583.0, 38.0, 19.0 ],
+					"patching_rect" : [ 263.0, 689.0, 38.0, 19.0 ],
 					"text" : "*~ 0.5"
 				}
 
@@ -69,7 +69,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 441.0, 583.0, 38.0, 19.0 ],
+					"patching_rect" : [ 218.0, 689.0, 38.0, 19.0 ],
 					"text" : "*~ 0.5"
 				}
 
@@ -80,7 +80,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 280.0, 570.0, 45.0, 45.0 ]
+					"patching_rect" : [ 192.0, 756.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -91,7 +91,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 340.0, 64.0, 45.0, 45.0 ]
+					"patching_rect" : [ 37.0, 1.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -108,107 +108,13 @@
 					"maxclass" : "bpatcher",
 					"name" : "int-FO-view.maxpat",
 					"numinlets" : 4,
-					"numoutlets" : 1,
+					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 298.000008106231689, 129.0, 509.0, 354.0 ],
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 68.000008106231689, 59.0, 962.0, 590.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.916680335998535, 83.0, 625.0, 436.0 ],
+					"presentation_rect" : [ 8.916680335998535, 10.0, 976.0, 606.0 ],
 					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontsize" : 11.0,
-					"id" : "obj-11",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 58.000008106231689, 37.0, 374.0, 17.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 112.000008106231689, 37.0, 281.0, 17.0 ],
-					"style" : "tatarism",
-					"text" : "Generate with Factor Oracle using a tempo"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.372549, 0.196078, 0.486275, 1.0 ],
-					"bgcolor2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"bgfillcolor_angle" : 270.0,
-					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"bgfillcolor_color1" : [ 0.372549, 0.196078, 0.486275, 1.0 ],
-					"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"bgfillcolor_proportion" : 0.39,
-					"bgfillcolor_type" : "gradient",
-					"fontsize" : 4.0,
-					"gradient" : 1,
-					"id" : "obj-25",
-					"linecount" : 2,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 441.0, 37.0, 137.5, 16.0 ],
-					"text" : ";\rmax launch_browser https://kivanctatar.wordpress.com/"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.372549, 0.196078, 0.486275, 1.0 ],
-					"bgcolor2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"bgfillcolor_angle" : 270.0,
-					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"bgfillcolor_color1" : [ 0.372549, 0.196078, 0.486275, 1.0 ],
-					"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"bgfillcolor_proportion" : 0.39,
-					"bgfillcolor_type" : "gradient",
-					"gradient" : 1,
-					"id" : "obj-72",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 471.0, 10.0, 76.0, 23.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 315.59375, 58.0, 70.0, 23.0 ],
-					"style" : "tatarism-5",
-					"text" : "Kıvanç Tatar",
-					"textjustification" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-1",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 442.0, 10.0, 26.0, 21.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 287.59375, 58.0, 26.0, 21.0 ],
-					"style" : "tatarism-5",
-					"text" : "by "
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontsize" : 14.0,
-					"id" : "obj-38",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 7.000008106231689, 12.0, 386.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 7.000008106231689, 12.0, 386.0, 20.0 ],
-					"style" : "tatarism",
-					"text" : "Musical Agent based on Self Organized Maps"
 				}
 
 			}
@@ -219,7 +125,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "signal", "signal", "jit_matrix" ],
-					"patching_rect" : [ 252.000008106231689, 512.0, 148.0, 19.0 ],
+					"patching_rect" : [ 68.000008106231689, 662.0, 148.0, 19.0 ],
 					"text" : "int-FO-model my_masom",
 					"varname" : "int-FO-model"
 				}
@@ -229,6 +135,7 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-12", 1 ],
+					"midpoints" : [ 272.5, 710.0, 238.0, 710.0 ],
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -236,7 +143,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 2 ],
-					"midpoints" : [ 454.75, 646.0, 837.458337386449216, 646.0, 837.458337386449216, 110.0, 634.166674772898432, 110.0 ],
+					"midpoints" : [ 227.5, 740.0, 1037.45833738644933, 740.0, 1037.45833738644933, 27.0, 706.166674772898318, 27.0 ],
 					"order" : 0,
 					"source" : [ "obj-12", 0 ]
 				}
@@ -245,6 +152,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-8", 1 ],
+					"midpoints" : [ 227.5, 739.5, 227.5, 739.5 ],
 					"order" : 1,
 					"source" : [ "obj-12", 0 ]
 				}
@@ -253,16 +161,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 1 ],
-					"midpoints" : [ 349.5, 118.5, 470.833341439565061, 118.5 ],
-					"order" : 1,
-					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-6", 1 ],
-					"midpoints" : [ 349.5, 116.0, 268.0, 116.0, 268.0, 490.0, 390.500008106231689, 490.0 ],
+					"midpoints" : [ 46.5, 51.5, 391.833341439565004, 51.5 ],
 					"order" : 0,
 					"source" : [ "obj-2", 0 ]
 				}
@@ -270,15 +169,33 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-6", 1 ],
+					"midpoints" : [ 46.5, 59.0, 45.0, 59.0, 45.0, 656.0, 206.500008106231689, 656.0 ],
+					"order" : 1,
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
-					"midpoints" : [ 307.500008106231689, 504.5, 261.500008106231689, 504.5 ],
+					"midpoints" : [ 77.500008106231689, 651.5, 77.500008106231689, 651.5 ],
 					"source" : [ "obj-3", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"midpoints" : [ 1020.500008106231689, 752.0, 201.5, 752.0 ],
+					"source" : [ "obj-3", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
+					"midpoints" : [ 163.500008106231689, 684.0, 272.5, 684.0 ],
 					"source" : [ "obj-6", 2 ]
 				}
 
@@ -286,7 +203,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 3 ],
-					"midpoints" : [ 390.500008106231689, 541.0, 828.000008106231689, 541.0, 828.000008106231689, 118.0, 797.500008106231689, 118.0 ],
+					"midpoints" : [ 206.500008106231689, 746.0, 1046.000008106231689, 746.0, 1046.000008106231689, 23.0, 1020.500008106231689, 23.0 ],
 					"source" : [ "obj-6", 3 ]
 				}
 
@@ -294,7 +211,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"midpoints" : [ 261.500008106231689, 541.0, 244.500008106231689, 541.0, 244.500008106231689, 118.0, 307.500008106231689, 118.0 ],
+					"midpoints" : [ 77.500008106231689, 726.0, 21.500008106231689, 726.0, 21.500008106231689, 52.0, 77.500008106231689, 52.0 ],
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -302,14 +219,8 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
+					"midpoints" : [ 120.500008106231689, 685.0, 227.5, 685.0 ],
 					"source" : [ "obj-6", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-25", 0 ],
-					"source" : [ "obj-72", 0 ]
 				}
 
 			}
@@ -335,7 +246,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "int-FO-model.maxpat",
-				"bootpath" : "~/Documents/Privat/PhD/GitHub/Run/int-FO",
+				"bootpath" : "~/Documents/Privat/PhD/IMS/LockdownJammer/Run",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -343,20 +254,20 @@
 , 			{
 				"name" : "clusters.txt",
 				"bootpath" : "~/Documents/Privat/PhD/IMS/MIC_interface/MASOM/guitar_acoustic_solo/data",
-				"patcherrelativepath" : "../../../IMS/MIC_interface/MASOM/guitar_acoustic_solo/data",
+				"patcherrelativepath" : "../../MIC_interface/MASOM/guitar_acoustic_solo/data",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "VMM-training-SOM-seq.txt",
 				"bootpath" : "~/Documents/Privat/PhD/IMS/MIC_interface/MASOM/guitar_acoustic_solo/data",
-				"patcherrelativepath" : "../../../IMS/MIC_interface/MASOM/guitar_acoustic_solo/data",
+				"patcherrelativepath" : "../../MIC_interface/MASOM/guitar_acoustic_solo/data",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "int-FO-mono-poly~.maxpat",
-				"bootpath" : "~/Documents/Privat/PhD/GitHub/Run/int-FO",
+				"bootpath" : "~/Documents/Privat/PhD/IMS/LockdownJammer/Run",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -364,83 +275,104 @@
 , 			{
 				"name" : "data-concatenated.txt",
 				"bootpath" : "~/Documents/Privat/PhD/IMS/MIC_interface/MASOM/guitar_acoustic_solo/data",
-				"patcherrelativepath" : "../../../IMS/MIC_interface/MASOM/guitar_acoustic_solo/data",
+				"patcherrelativepath" : "../../MIC_interface/MASOM/guitar_acoustic_solo/data",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pipo-VA-online-interactive-v01~.maxpat",
 				"bootpath" : "~/Documents/Privat/PhD/GitHub/abstractions/VA_estimation",
-				"patcherrelativepath" : "../../abstractions/VA_estimation",
+				"patcherrelativepath" : "../../../GitHub/abstractions/VA_estimation",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.audioinfluencer.maxpat",
 				"bootpath" : "~/Documents/Privat/PhD/GitHub/abstractions/Somax",
-				"patcherrelativepath" : "../../abstractions/Somax",
+				"patcherrelativepath" : "../../../GitHub/abstractions/Somax",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OMax.yin+.maxpat",
 				"bootpath" : "~/Documents/Privat/PhD/IMS/Somax/Somax2/abstractions/other",
-				"patcherrelativepath" : "../../../IMS/Somax/Somax2/abstractions/other",
+				"patcherrelativepath" : "../../Somax/Somax2/abstractions/other",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Yin+.maxpat",
 				"bootpath" : "~/Documents/Privat/PhD/IMS/Somax/Somax2/abstractions/other",
-				"patcherrelativepath" : "../../../IMS/Somax/Somax2/abstractions/other",
+				"patcherrelativepath" : "../../Somax/Somax2/abstractions/other",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sr.maxpat",
 				"bootpath" : "~/Documents/Privat/PhD/IMS/Somax/Somax2/abstractions/other",
-				"patcherrelativepath" : "../../../IMS/Somax/Somax2/abstractions/other",
+				"patcherrelativepath" : "../../Somax/Somax2/abstractions/other",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bc.autoname.js",
 				"bootpath" : "~/Documents/Privat/PhD/IMS/Somax/Somax2/externals",
-				"patcherrelativepath" : "../../../IMS/Somax/Somax2/externals",
+				"patcherrelativepath" : "../../Somax/Somax2/externals",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "audio2chroma.maxpat",
 				"bootpath" : "~/Documents/Privat/PhD/IMS/Somax/Somax2/abstractions/other",
-				"patcherrelativepath" : "../../../IMS/Somax/Somax2/abstractions/other",
+				"patcherrelativepath" : "../../Somax/Somax2/abstractions/other",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tempos.txt",
 				"bootpath" : "~/Documents/Privat/PhD/IMS/MIC_interface/MASOM/guitar_acoustic_solo/data",
-				"patcherrelativepath" : "../../../IMS/MIC_interface/MASOM/guitar_acoustic_solo/data",
+				"patcherrelativepath" : "../../MIC_interface/MASOM/guitar_acoustic_solo/data",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SOM-nodes.txt",
 				"bootpath" : "~/Documents/Privat/PhD/IMS/MIC_interface/MASOM/guitar_acoustic_solo/data",
-				"patcherrelativepath" : "../../../IMS/MIC_interface/MASOM/guitar_acoustic_solo/data",
+				"patcherrelativepath" : "../../MIC_interface/MASOM/guitar_acoustic_solo/data",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "stats.txt",
 				"bootpath" : "~/Documents/Privat/PhD/IMS/MIC_interface/MASOM/guitar_acoustic_solo/data",
-				"patcherrelativepath" : "../../../IMS/MIC_interface/MASOM/guitar_acoustic_solo/data",
+				"patcherrelativepath" : "../../MIC_interface/MASOM/guitar_acoustic_solo/data",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "int-FO-view.maxpat",
-				"bootpath" : "~/Documents/Privat/PhD/GitHub/Run/int-FO",
+				"bootpath" : "~/Documents/Privat/PhD/IMS/LockdownJammer/Run",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MIC_bpatch2.maxpat",
+				"bootpath" : "~/Documents/Privat/PhD/IMS/LockdownJammer/Run",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MIC_bpatch4.maxpat",
+				"bootpath" : "~/Documents/Privat/PhD/IMS/LockdownJammer/Run",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MIC_bpatch5.maxpat",
+				"bootpath" : "~/Documents/Privat/PhD/IMS/LockdownJammer/Run",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -2270,7 +2202,17 @@
 				"parentstyle" : "",
 				"multi" : 0
 			}
- ]
+ ],
+		"color" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
+		"bgcolor" : [ 0.898039215686275, 0.898039215686275, 0.898039215686275, 1.0 ],
+		"editing_bgcolor" : [ 0.898039215686275, 0.898039215686275, 0.898039215686275, 1.0 ],
+		"bgfillcolor_type" : "gradient",
+		"bgfillcolor_color" : [ 0.2, 0.2, 0.2, 1.0 ],
+		"bgfillcolor_color1" : [ 0.301960784313725, 0.301960784313725, 0.301960784313725, 1.0 ],
+		"bgfillcolor_color2" : [ 0.129411764705882, 0.137254901960784, 0.149019607843137, 1.0 ],
+		"bgfillcolor_angle" : 270.0,
+		"bgfillcolor_proportion" : 0.5,
+		"bgfillcolor_autogradient" : 0.0
 	}
 
 }
