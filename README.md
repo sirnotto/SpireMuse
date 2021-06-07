@@ -117,7 +117,7 @@ This section converts the original songs in the training dataset to a sequence o
 
 ========================
 
-## Running Spire Muse with MASOM
+## Running Spire Muse
 
 More information is pending.
   
