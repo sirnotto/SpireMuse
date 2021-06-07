@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 4,
+			"minor" : 1,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 840.0, 718.0 ],
+		"rect" : [ 574.0, 209.0, 840.0, 718.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-26",
@@ -94,7 +95,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 2.315585999999996, 158.0, 121.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 148.589607000000001, 159.641662999999994, 64.0, 17.0 ],
+					"presentation_rect" : [ 148.589607000000001, 131.641662999999994, 64.0, 17.0 ],
 					"text" : "Pitch",
 					"textjustification" : 1
 				}
@@ -109,7 +110,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 75.17857349999997, 29.0, 121.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 64.315585999999996, 24.0, 64.0, 17.0 ],
+					"presentation_rect" : [ 64.315585999999996, -4.0, 64.0, 17.0 ],
 					"text" : "Input level",
 					"textjustification" : 1
 				}
@@ -124,7 +125,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 298.0, 46.0, 121.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 254.17857349999997, 24.0, 48.0, 17.0 ],
+					"presentation_rect" : [ 254.17857349999997, -4.0, 48.0, 17.0 ],
 					"text" : "Chroma",
 					"textjustification" : 1
 				}
@@ -134,7 +135,7 @@
 				"box" : 				{
 					"comment" : "(list) Raw midi analysis: [nn, vel, ch]",
 					"id" : "obj-33",
-					"index" : 4,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -146,7 +147,7 @@
 				"box" : 				{
 					"comment" : "(list) Continous chroma output",
 					"id" : "obj-32",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -164,7 +165,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 192.0, 30.0, 213.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.089607000000001, 0.0, 357.0, 24.0 ],
+					"presentation_rect" : [ 2.089607000000001, 182.0, 357.0, 24.0 ],
 					"text" : "Audio Influencer",
 					"textjustification" : 1
 				}
@@ -186,7 +187,7 @@
 				"box" : 				{
 					"comment" : "(list) Bonk thresholds",
 					"id" : "obj-28",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -199,7 +200,7 @@
 				"box" : 				{
 					"comment" : "(int) Pitch influence",
 					"id" : "obj-25",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -211,7 +212,7 @@
 				"box" : 				{
 					"comment" : "(bang) Influence onset",
 					"id" : "obj-24",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -288,7 +289,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 668.0, 25.300932999999986, 49.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 197.815581999999949, 137.641662999999994, 79.0, 20.0 ],
+					"presentation_rect" : [ 197.815581999999949, 109.641662999999994, 79.0, 20.0 ],
 					"text" : "Thresh (ms):"
 				}
 
@@ -332,7 +333,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 56.541565000000006, 551.0, 364.0, 34.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.089607000000001, 173.261108000000036, 364.0, 34.0 ],
+					"presentation_rect" : [ 2.089607000000001, 145.261108000000036, 364.0, 34.0 ],
 					"range" : 88
 				}
 
@@ -341,7 +342,7 @@
 				"box" : 				{
 					"comment" : "(bang) External trigger",
 					"id" : "obj-14",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -361,7 +362,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 755.0, 535.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 335.089607000000001, 107.141662999999994, 22.0, 22.0 ]
+					"presentation_rect" : [ 335.089607000000001, 79.141662999999994, 22.0, 22.0 ]
 				}
 
 			}
@@ -374,7 +375,7 @@
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 62.0, 84.420905767446214, 80.0, 13.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.089607000000001, 37.5, 188.451957999999991, 21.0 ]
+					"presentation_rect" : [ 2.089607000000001, 9.5, 188.451957999999991, 21.0 ]
 				}
 
 			}
@@ -386,7 +387,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 656.0, 357.0, 48.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 197.815581999999949, 107.141662999999994, 44.0, 20.0 ],
+					"presentation_rect" : [ 197.815581999999949, 79.141662999999994, 44.0, 20.0 ],
 					"text" : "Onset:"
 				}
 
@@ -402,7 +403,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 593.0, 357.0, 57.541564999999991, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 254.17857349999997, 107.141662999999994, 74.0, 22.0 ]
+					"presentation_rect" : [ 254.17857349999997, 79.141662999999994, 74.0, 22.0 ]
 				}
 
 			}
@@ -415,7 +416,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 62.0, 374.0, 86.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.089607000000001, 138.641662999999994, 117.0, 20.0 ],
+					"presentation_rect" : [ 2.089607000000001, 110.641662999999994, 117.0, 20.0 ],
 					"text" : "Pitch Segmentation:"
 				}
 
@@ -431,7 +432,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 69.0, 430.0, 55.999999999999986, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 121.089607000000001, 136.641662999999994, 69.0, 22.0 ]
+					"presentation_rect" : [ 121.089607000000001, 108.641662999999994, 69.0, 22.0 ]
 				}
 
 			}
@@ -472,7 +473,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 798.0, 53.150932131784629, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 321.089607000000001, 137.641662999999994, 38.0, 22.0 ]
+					"presentation_rect" : [ 321.089607000000001, 109.641662999999994, 38.0, 22.0 ]
 				}
 
 			}
@@ -487,7 +488,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 717.0, 53.150932131784629, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 278.089607000000001, 137.641662999999994, 38.0, 22.0 ]
+					"presentation_rect" : [ 278.089607000000001, 109.641662999999994, 38.0, 22.0 ]
 				}
 
 			}
@@ -641,11 +642,11 @@
 				"box" : 				{
 					"comment" : "(signal) Audio Input",
 					"id" : "obj-4",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 43.0, 37.0, 30.0, 30.0 ]
 				}
 
@@ -662,7 +663,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 440.0, 525.5, 142.0, 85.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 197.815581999999949, 37.5, 158.725983000000042, 67.641662999999994 ],
+					"presentation_rect" : [ 197.815581999999949, 9.5, 158.725983000000042, 67.641662999999994 ],
 					"setminmax" : [ 0.0, 1.049999952316284 ],
 					"size" : 12,
 					"slidercolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 1.0 ],
@@ -701,7 +702,7 @@
 					"outlettype" : [ "", "int", "int", "float" ],
 					"patching_rect" : [ 43.0, 194.0, 338.0, 74.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.089607000000001, 60.641662999999994, 188.0, 71.0 ],
+					"presentation_rect" : [ 2.089607000000001, 32.641662999999994, 188.0, 71.0 ],
 					"varname" : "Yin+",
 					"viewvisibility" : 1
 				}
@@ -1049,7 +1050,60 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "OMax.yin+.maxpat",
+				"bootpath" : "~/Documents/Privat/PhD/IMS/Somax/Somax2/abstractions/other",
+				"patcherrelativepath" : "../../../../Somax/Somax2/abstractions/other",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Yin+.maxpat",
+				"bootpath" : "~/Documents/Privat/PhD/IMS/Somax/Somax2/abstractions/other",
+				"patcherrelativepath" : "../../../../Somax/Somax2/abstractions/other",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sr.maxpat",
+				"bootpath" : "~/Documents/Privat/PhD/IMS/Somax/Somax2/abstractions/other",
+				"patcherrelativepath" : "../../../../Somax/Somax2/abstractions/other",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "bc.autoname.js",
+				"bootpath" : "~/Documents/Privat/PhD/IMS/Somax/Somax2/externals",
+				"patcherrelativepath" : "../../../../Somax/Somax2/externals",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "audio2chroma.maxpat",
+				"bootpath" : "~/Documents/Privat/PhD/IMS/Somax/Somax2/abstractions/other",
+				"patcherrelativepath" : "../../../../Somax/Somax2/abstractions/other",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "yin~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "bc.yinstats.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "ircamdescriptor~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "bonk~.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0
 	}
 
 }

@@ -1,4 +1,4 @@
-# Lockdown Jammer v1.0
+# Spire Muse v1.0
 A Virtual Musical Partner for Creative Brainstorming
 by Notto J. W. Thelle
 
@@ -8,11 +8,11 @@ by Kıvanç Tatar
 
 For the original version of MASOM, go to https://github.com/ktatar/MASOM
 
-This version of MASOM has been modified to work with the Lockdown Jammer interface.
+This version of MASOM has been modified to work with the Spire Muse interface.
 
-Lockdown Jammer is co-creative musical agent that engages in different kinds of interactive behaviors and stylistic responses. The software utilizes corpora of solo instrumental performances encoded as self-organized maps and outputs slices of the corpora as concatenated, remodelled audio sequences. Transitions between the agent’s behaviors are partially automated, and the interface enables the negotiation of these transitions through feedback buttons that signal approval, force reversions to previous behaviors, or request change. Styles of musical responses are embedded in a pre-trained latent space, emergent in the interaction, and may be influenced through the weighting of rhythmic, spectral, harmonic and melodic features. The training and run-time modules utilize the MASOM agent architecture.
+Spire Muse is co-creative musical agent that engages in different kinds of interactive behaviors and stylistic responses. The software utilizes corpora of solo instrumental performances encoded as self-organized maps and outputs slices of the corpora as concatenated, remodelled audio sequences. Transitions between the agent’s behaviors are partially automated, and the interface enables the negotiation of these transitions through feedback buttons that signal approval, force reversions to previous behaviors, or request change. Styles of musical responses are embedded in a pre-trained latent space, emergent in the interaction, and may be influenced through the weighting of rhythmic, spectral, harmonic and melodic features. The training and run-time modules utilize the MASOM agent architecture.
 
-Lockdown Jammer is designed to encourage creative exploration and defer cognitive deliberation. The musical response type is embedded in the latent memory space and activated through interactive behaviors ranging from highly reactive to the user’s input to largely independent. The musical direction can be influenced indirectly through weighting rhythmic, spectral, melodic and harmonic features.
+Spire Muse is designed to encourage creative exploration and defer cognitive deliberation. The musical response type is embedded in the latent memory space and activated through interactive behaviors ranging from highly reactive to the user’s input to largely independent. The musical direction can be influenced indirectly through weighting rhythmic, spectral, melodic and harmonic features.
 
 Install following MAX packages from the package manager:
 
@@ -113,7 +113,7 @@ This section converts the original songs in the training dataset to a sequence o
 
 ========================
 
-## Running Lockdown Jammer with MASOM
+## Running Spire Muse with MASOM
 
 More information is pending.
   
