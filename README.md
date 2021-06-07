@@ -1,5 +1,7 @@
 # Spire Muse v1.0
+
 A Virtual Musical Partner for Creative Brainstorming
+
 by Notto J. W. Thelle
 
 using MASOM (Musical Agent based on Self-Organizing Maps) v2.0.2 by Kıvanç Tatar
@@ -32,7 +34,7 @@ Restart your Max after you install all libraries and adding the path of the abst
 
 # Training on your own dataset with MASOM
 
-- Create a folder for your dataset. Name doesn't matter. We will refer to this folder as dataset_folder from now on.
+- Create a folder for your dataset. Name doesn't matter. This folder will be referred to as dataset_folder from now on.
 
 ## Preparing your audio files for training
 
@@ -61,7 +63,7 @@ Drop your dataset_folder to the area in the step 1. You should see the dataset_f
 
 This second part goes through each .wav file in your audio folder and creates data files with the segments, and the audio features of the segments. The patch saves the data in the audio folder, as a text file in a folder with the same name of the .wav file. In the text file, each line is the features of a segment in the format, 
 
-Segment-number, File-name Segment-start Segment-duration Valence Arousal Loudness-mean Loudness-std MFCC-mean(13 entries) MFCC-std(13 entries) Perceptual-Spectral-Decrease-mean Perceptual-Spectral-Decrease-std
+Segment-number, File-name Segment-start Segment-duration Valence Arousal Loudness-mean Loudness-std MFCC-mean(13 entries) MFCC-std(13 entries) Perceptual-Spectral-Decrease-mean Perceptual-Spectral-Decrease-std Fundamental frequency-mean Fundamental frequency-std Chroma-mean(12 entries) Chroma-std(12 entries)
 
 To run this section, 
 - Set your minimum and maximum segment duration in the UI. The segmentation is automatic; however, we can still set the minimum and maximum durations. 
@@ -80,6 +82,10 @@ To confirm if this step was successful, check if data-concatenated.txt exists in
 ## 4- Calculate BPMs
 
 The file receiver.py must be running for this to work. Launch from terminal with command: python3 receiver.py
+
+## 5- Generate chroma transition matrices
+
+This step creates a file called pctm.txt in your dataset_folder. In runtime (automation view), this file is queried continuously to keep track of the most harmonically relevant songs to train the Factor Oracle in relation to the user's current input.
 
 ## 5- Self-Organizing Map Training
 
@@ -118,9 +124,11 @@ More information is pending.
 =====================
   
 
-## Publications
+## Publications related to Spire Muse
 
-If you would like to learn more about MASOM, please review the following papers:
+Thelle, N. J. W. & Pasquier, P. (2021). Spire Muse: A Virtual Musical Parner for Creative Brainstorming. In Proceedings of New Interfaces for Musical Expression (NIME 2021). NYU Shanghai, June 14-18, 2021.
+
+If you would like to learn more about the original MASOM, please review the following papers:
 
 MASOM V1 
 - Tatar, K. & Pasquier, P. (2017). MASOM: A Musical Agent Architecture based on Self-Organizing Maps, Affective Computing, and Variable Markov Models. In Proceedings of the 5th International Workshop on Musical Metacreation (MuMe 2017).
@@ -132,18 +140,10 @@ Agents based on Self-Organizing Maps. Submitted to the Artificial Intelligence J
 
 More info is available at: kivanctatar.com/masom
 
-So far, there are no publications related to Lockdown Jammer or the modifications to MASOM detailed in this readme file.
+## Acknowledgements
 
-## Acknowledgements (related to MASOM)
+I would like to thank Kıvanç Tatar and Philippe Pasquier for sharing the MASOM code and departing knowledge about the system through email correspondence and online meetings. A special thanks to Philippe Pasquier for guidance and for co-authoring the 2021 NIME paper. I would also like to thank Bernt Isak Wærstad for his invaluable feedback.
 
-This work has been supported by the Canada Council of the Arts, the Natural Sciences and Engineering Research Council of Canada, and Social Sciences and Humanities Research Council of Canada.
-
-Ce travail est supporté par le conseil des arts du Canada, le Conseil national des sciences et de l’ingénieurie du Canada, et le Conseil national des sciences humaines et sociales du Canada.
-
-MASOM v2 is supported by Black Bag Media artist group's Canada Council for the Arts Concept to Realization grant. 
-
-MASOM v1 is created in part of Kıvanç Tatar's doctoral studies; supervised by Philippe Pasquier, Steve Dipaola, Oliver Bown, and externally reviewed by Matthew Yee-King; and funded by a doctoral scholarship from Philippe Pasquier's SSHRC Insight and NSERC Discovery grants. [Thesis](http://summit.sfu.ca/item/19665)
-
-I would like to also thank , Jeff Ens, Ronald Boerson, Jonas Krasch, and Jianyu Fan for their contributions. 
+Acknowledgements related to MASOM at kivanctatar.com/masom
 
 
