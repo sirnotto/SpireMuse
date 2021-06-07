@@ -128,7 +128,7 @@ More information is pending.
 
 - Thelle, N. J. W. & Pasquier, P. (2021). Spire Muse: A Virtual Musical Parner for Creative Brainstorming. In Proceedings of New Interfaces for Musical Expression (NIME 2021). NYU Shanghai, June 14-18, 2021.
 
-## Publication related to MASOM:
+## Publications related to MASOM:
 
 - Tatar, K. & Pasquier, P. (2017). MASOM: A Musical Agent Architecture based on Self-Organizing Maps, Affective Computing, and Variable Markov Models. In Proceedings of the 5th International Workshop on Musical Metacreation (MuMe 2017).
 
