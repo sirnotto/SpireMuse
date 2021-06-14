@@ -148,7 +148,7 @@ If one or more same songs feature in both these groups, the FO will load the hig
 
 ## 4- Automation view vs. Manual view
 
-Before starting the first session, the user should be aware of the concept of automation vs. manual view. By default, Spire Muse begins in the automation view, meaning that the agent will primarily decide its own states based on what the user is playing. In this view, the user only has indirect influence on the agent's choices through the negotiation panel, featuring the following buttons:
+Before starting the first session, the user should be aware of the concept of Automation vs. Manual view. By default, Spire Muse begins in the Automation view, meaning that the agent will primarily decide its own states based on what the user is playing. In this view, the user only has indirect influence on the agent's choices through the negotiation panel, featuring the following buttons:
 
 - _Go back_ forces the agent to its previous mode. This backtracking can be repeated. The agent tracks its own history, which also includes FO song changes and previously liked states (Thumbs up markers).
 - _Pause_ will mute the agent but it is still listening. This is useful if the user needs time to figure out something in his or her playing without interruption.
