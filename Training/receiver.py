@@ -46,7 +46,7 @@ def gothru_masom(addr, tags, stuff, source):
         y, sr = librosa.load(audiofile)
         tempo, beats = librosa.beat.beat_track(y=y, sr=sr)
         print(tempo)
-        masom_r.append(tempo)
+        masom_r.append(str(tempo))
         c.send(masom_r)
     if function.startswith('test'):
         function = stuff[0]
